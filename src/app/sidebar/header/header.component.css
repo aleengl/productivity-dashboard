@@ -1,0 +1,16 @@
+.sidebar-header {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.sidebar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sidebar-option {
+  cursor: pointer;
+}
