@@ -9,5 +9,5 @@ import {CommonModule, NgOptimizedImage} from '@angular/common';
   styleUrl: './logout.component.css'
 })
 export class LogoutComponent {
-
+  isLogout = false;
 }

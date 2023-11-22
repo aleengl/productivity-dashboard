@@ -3,15 +3,21 @@
   flex-direction: column;
   gap: 2rem;
   font-size: 1.5rem;
-  flex-grow: 1;
-  /* margin-bottom: auto; */
+  margin-top: -10rem;
 }
 
 .navigation-item {
   display: flex;
   align-items: center;
   gap: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.navigation-item:hover {
+  background-color: var(--mainBackgroundColor);
+  transition: .2s;
 }
 
 .navigation-title {
