@@ -1,18 +1,19 @@
+@import "variables";
 
-@import 'variables';
+.logout-block {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
 
-.logout-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.logout-container:hover {
-  background-color: $main-background;
-  transition: .2s;
+    &:hover {
+      background-color: $main-background;
+      transition: 0.2s;
+    }
+  }
 }

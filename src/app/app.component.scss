@@ -1,11 +1,10 @@
-
-.container {
+.app-block {
   display: flex;
-}
 
-.main-container {
-  /* TODO: flex-grow:1 => flex is only a temporary property to format the routing pages */
-  flex: 1 0 0;
-  background-color: #001331;
-  padding: 5rem 3rem;
+  &__container {
+    /* TODO: flex-grow:1 => flex is only a temporary property to format the routing pages */
+    flex: 1 0 0;
+    background-color: #001331;
+    padding: 5rem 3rem;
+  }
 }

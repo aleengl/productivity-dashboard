@@ -1,32 +1,33 @@
+@import "variables";
 
-@import 'variables';
-
-.navigation {
+.navigation-block {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   font-size: 1.5rem;
-}
 
-.navigation-item {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-}
+  &__routing {
+    &--active {
+      background-color: $main-background;
+      border-radius: 10px;
+    }
+  }
 
-.navigation-item:hover {
-  background-color: $main-background;
-  transition: .2s;
-}
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
 
-.navigation-title {
-  margin-right: auto;
-}
+    &:hover {
+      background-color: $main-background;
+      transition: 0.2s;
+    }
+  }
 
-.active {
-  background-color: $main-background;
-  border-radius: 10px;
+  &__title {
+    margin-right: auto;
+  }
 }

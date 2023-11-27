@@ -1,7 +1,11 @@
-<a routerLink="logout" (click)="toggleLog()">
-  <div class="logout-container">
-    <img ngSrc="/assets/log-out-outline.svg" alt="logout" height="25" width="25"/>
-    <p>Log {{isLogout ? "In" : "Out"}}</p>
+<a class="logout-block" routerLink="logout" (click)="toggleLog()">
+  <div class="logout-block__container">
+    <img
+      ngSrc="/assets/log-out-outline.svg"
+      alt="logout"
+      height="25"
+      width="25"
+    />
+    <p>Log {{ isLogout ? "In" : "Out" }}</p>
   </div>
 </a>
-
