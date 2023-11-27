@@ -1,0 +1,35 @@
+// This file should include global styles, CSS resets, and important dependencies. It's the entry point for your global styling
+
+@import "variables";
+@import "mixins";
+@import "functions";
+@import "typography";
+@import "base";
+@import "layout";
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 62.5%; /* 1rem = 10px */
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
