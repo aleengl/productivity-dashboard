@@ -1,9 +1,11 @@
+
+@import 'variables';
+
 .navigation {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   font-size: 1.5rem;
-  margin-top: -10rem;
 }
 
 .navigation-item {
@@ -16,10 +18,15 @@
 }
 
 .navigation-item:hover {
-  background-color: var(--mainBackgroundColor);
+  background-color: $main-background;
   transition: .2s;
 }
 
 .navigation-title {
   margin-right: auto;
+}
+
+.active {
+  background-color: $main-background;
+  border-radius: 10px;
 }

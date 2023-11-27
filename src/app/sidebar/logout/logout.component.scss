@@ -1,4 +1,7 @@
-.logout {
+
+@import 'variables';
+
+.logout-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +12,7 @@
   cursor: pointer;
 }
 
-.logout:hover {
-  background-color: var(--mainBackgroundColor);
+.logout-container:hover {
+  background-color: $main-background;
   transition: .2s;
 }

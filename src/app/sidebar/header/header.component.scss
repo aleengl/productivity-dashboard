@@ -3,6 +3,14 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15rem;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
 }
 
 .sidebar-brand {
