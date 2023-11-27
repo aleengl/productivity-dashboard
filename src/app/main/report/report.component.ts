@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './report.component.html',
-  styleUrl: './report.component.css'
+  styleUrl: './report.component.scss'
 })
 export class ReportComponent {
 

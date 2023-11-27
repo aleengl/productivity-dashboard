@@ -9,7 +9,7 @@ import {LogoutComponent} from "./logout/logout.component";
   standalone: true,
   imports: [CommonModule, HeaderComponent, NavigationComponent, LogoutComponent],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
 

@@ -6,7 +6,7 @@ import {CommonModule} from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './project.component.html',
-  styleUrl: './project.component.css'
+  styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
 
