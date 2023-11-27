@@ -5,6 +5,7 @@ import {TaskComponent} from "./main/task/task.component";
 import {CalendarComponent} from "./main/calendar/calendar.component";
 import {ReportComponent} from "./main/report/report.component";
 import {SettingsComponent} from "./main/settings/settings.component";
+import { LogoutComponent } from './main/logout/logout.component';
 
 export const routes: Routes = [
   {
@@ -37,5 +38,10 @@ export const routes: Routes = [
     path: "settings",
     component: SettingsComponent,
     title: "Settings"
+  },
+  {
+    path: "logout",
+    component: LogoutComponent,
+    title: "Logged Out"
   }
 ];
