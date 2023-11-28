@@ -1,5 +1,7 @@
+@import "variables";
+
 .app-block {
-  display: flex;
+  display: $display-flex;
 
   &__container {
     /* TODO: flex-grow:1 => flex is only a temporary property to format the routing pages */

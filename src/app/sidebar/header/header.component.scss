@@ -1,13 +1,15 @@
+@import "variables";
+
 .header-block {
-  display: flex;
+  display: $display-flex;
   gap: 1rem;
   justify-content: center;
-  align-items: center;
+  align-items: $align-items;
   margin-bottom: 15rem;
 
   &__logo {
-    display: flex;
-    align-items: center;
+    display: $display-flex;
+    align-items: $align-items;
     gap: 1rem;
     cursor: pointer;
   }

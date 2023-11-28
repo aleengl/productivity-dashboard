@@ -2,8 +2,8 @@
 
 .logout-block {
   &__container {
-    display: flex;
-    align-items: center;
+    display: $display-flex;
+    align-items: $align-items;
     justify-content: center;
     gap: 1rem;
     font-size: 1.5rem;

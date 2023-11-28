@@ -1,7 +1,7 @@
 @import "variables";
 
 .navigation-block {
-  display: flex;
+  display: $display-flex;
   flex-direction: column;
   gap: 2rem;
   font-size: 1.5rem;
@@ -14,8 +14,8 @@
   }
 
   &__item {
-    display: flex;
-    align-items: center;
+    display: $display-flex;
+    align-items: $align-items;
     gap: 2rem;
     padding: 1rem;
     border-radius: 10px;
