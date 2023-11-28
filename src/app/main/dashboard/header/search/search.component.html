@@ -1,1 +1,14 @@
-<p>search works!</p>
+<div class="search-block">
+  <img
+    class="search-block__image"
+    ngSrc="./assets/search-outline.svg"
+    height="30"
+    width="30"
+  />
+  <input
+    class="search-block__input"
+    type="text"
+    placeholder="Search Here"
+    [(ngModel)]="inputVal"
+  />
+</div>

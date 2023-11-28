@@ -1,0 +1,20 @@
+.search-block {
+  position: relative;
+
+  &__image {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__input {
+    width: 100rem;
+    padding: 1rem;
+    border-radius: 3px;
+    font-size: 2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+  }
+}
