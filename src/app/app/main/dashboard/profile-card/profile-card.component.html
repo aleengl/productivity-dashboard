@@ -1,4 +1,5 @@
 <div class="profile-card-block">
+  @if(userProfile) {
   <img
     *ngIf="userProfile"
     class="profile-card-block__image"
@@ -8,7 +9,10 @@
     width="80"
   />
   <div class="profile-card-block__container">
-    <h2>{{ userProfile?.name }}</h2>
+    <h2>{{ userProfile.name }}</h2>
     <p>Future Fullstack Developer</p>
   </div>
+  } @else {
+  <p>{{ errorMessage }}</p>
+  }
 </div>

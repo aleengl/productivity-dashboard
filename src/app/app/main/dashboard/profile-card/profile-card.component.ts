@@ -12,17 +12,25 @@ import { GithubUserProfile } from '../../../../github-user-profile';
 export class ProfileCardComponent {
   readonly url = 'https://api.github.com/users/';
   userProfile: GithubUserProfile | undefined;
+  errorMessage = '';
 
   constructor() {
     this.getUser('aleengl').then((userData) => {
-      this.userProfile = userData;
+      if (userData) {
+        this.userProfile = userData;
+      }
     });
   }
 
-  async getUser(user: string): Promise<GithubUserProfile> {
-    const response = await fetch(`${this.url}${user}`);
-    const data: GithubUserProfile = await response.json();
+  async getUser(user: string): Promise<GithubUserProfile | void> {
+    try {
+      const response = await fetch(`${this.url}${user}`);
+      const data: GithubUserProfile = await response.json();
 
-    return data;
+      return data;
+    } catch (error) {
+      this.errorMessage =
+        'There was an error while fetching the data. Please refresh your browser';
+    }
   }
 }
