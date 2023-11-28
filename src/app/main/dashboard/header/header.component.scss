@@ -1,5 +1,13 @@
+@import "variables";
+
 .header-block {
-  display: flex;
+  margin-bottom: 5rem;
+  display: $display-flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: $align-items;
+
+  &__container {
+    text-align: right;
+    flex: 1 0 auto;
+  }
 }
