@@ -1,0 +1,18 @@
+<div class="profile-card-block">
+  @if(userProfile) {
+  <img
+    *ngIf="userProfile"
+    class="profile-card-block__image"
+    [src]="userProfile.avatar_url"
+    placeholder="profile image"
+    height="80"
+    width="80"
+  />
+  <div class="profile-card-block__container">
+    <h2>{{ userProfile.name }}</h2>
+    <p>Future Fullstack Developer</p>
+  </div>
+  } @else {
+  <p>{{ errorMessage }}</p>
+  }
+</div>
