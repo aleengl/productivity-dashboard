@@ -1,0 +1,7 @@
+@import "variables";
+
+.user-status-block {
+  display: $display-flex;
+  align-items: $align-items;
+  justify-content: space-between;
+}
