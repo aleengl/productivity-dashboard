@@ -1,0 +1,22 @@
+@import "variables";
+
+.task-tracker-block {
+  display: $display-flex;
+  align-items: $align-items;
+  gap: 2rem;
+  background-color: #000;
+  padding: 2rem;
+  border-radius: 10px;
+
+  &__title {
+    font-size: 3rem;
+
+    &--upper {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__taskNum {
+    font-size: 7rem;
+  }
+}
