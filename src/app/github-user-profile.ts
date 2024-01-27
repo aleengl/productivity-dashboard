@@ -32,3 +32,20 @@ export interface GithubUserProfile {
   created_at: string;
   updated_at: string;
 }
+
+export interface PlotConfig {
+  response: Person[];
+  label: string;
+  selector: string;
+  field: any;
+}
+
+export interface Person {
+  firstname: string;
+  lastname: string;
+  country: string;
+  gender: string;
+  city: string;
+  cash?: string;
+  randomNumber?: number;
+}

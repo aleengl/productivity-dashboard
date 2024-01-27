@@ -1,0 +1,12 @@
+<div class="activity-monitor-block">
+  @if(!personErrorMessage) {
+  <canvas id="canvas">{{ person }}</canvas>
+  } @else {
+  <h1>{{ personErrorMessage }}</h1>
+
+  } @if(!moneyErrorMessage) {
+  <canvas id="canvas1">{{ money }}</canvas>
+  } @else {
+  <h1>{{ moneyErrorMessage }}</h1>
+  }
+</div>
